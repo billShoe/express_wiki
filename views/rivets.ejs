@@ -1,19 +1,19 @@
-<h2><%= Rivets.get('name') %></h2>
+<h2><%= rivet.get('name') %></h2>
 <h3>Material</h3>
-<p><%= Rivets.get('material') %></p>
+<p><%= rivet.get('material') %></p>
 <h3>Shape</h3>
-<p><%= Rivets.get('shape') %></p>
+<p><%= rivet.get('shape') %></p>
 <h3>Size</h3>
-<p><%= Rivets.get('size') %></p>
+<p><%= rivet.get('size') %></p>
 <h3>Summary</h3>
-<p><%= Rivets.get('summary') %></p>
+<p><%= rivet.get('summary') %></p>
 <br>
 <br>
 
-<a href="/rivets/<%= Rivets.get('id')%>/edit">Edit </a>
+<a href="/rivets/<%= rivet.get('id')%>/edit">Update</a>
 
 <form
-  action="/rivets/<%= Rivets.get('id') %>/delete"
+  action="/rivets/<%= rivet.get('id')%>/delete"
   method="post"
 >
   <input type='submit' value='remove' />

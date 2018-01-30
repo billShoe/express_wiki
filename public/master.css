@@ -1,0 +1,13 @@
+#sidebar {
+  float: left;
+  background-color: lightBlue;
+  padding: 0px 10px 0px 10px;
+  margin-right: 10px;
+  position: relative;
+  left: 0;
+  top: 10px;
+}
+
+#main {
+  float: left;
+}

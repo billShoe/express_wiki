@@ -11,5 +11,8 @@
     "pg": "6.1.5",
     "sequelize": "3.30.4",
     "sequelize-cli": "^3.2.0"
+  },
+  "devDependencies": {
+    "reload": "^2.2.2"
   }
 }

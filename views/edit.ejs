@@ -1,25 +1,25 @@
 <h2>Submit a new entry</h2>
 <br>
 <form
-    action="/rivets/<%=Rivets.get('id')%>/edit"
+    action="/rivets/<%=rivet.get('id')%>/edit"
     method="post"
   >
     <label>Name: </label>
-    <input type='text' name='name' value='<%= Rivets.get('name') %>'/>
+    <input type='text' name='name' value='<%= rivet.get('name') %>'/>
     <br>
     <label>Material: </label>
-    <input type='text' name='material' value='<%= Rivets.get('material') %>'/>
+    <input type='text' name='material' value='<%= rivet.get('material') %>'/>
     <br>
     <label>Shape: </label>
-    <input type='text' name='shape' value='<%= Rivets.get('shape') %>'/>
+    <input type='text' name='shape' value='<%= rivet.get('shape') %>'/>
     <br>
     <label>Size: </label>
-    <input type='text' name='size' value='<%= Rivets.get('size') %>'/>
+    <input type='text' name='size' value='<%= rivet.get('size') %>'/>
     <br>
     <label>Summary: </label>
-    <input type='text' name='summary' value='<%= Rivets.get('summary') %>'/>
+    <input type='text' name='summary' value='<%= rivet.get('summary') %>'/>
     <br>
-    <input type='submit' value='Edit Rivet' />
+    <input type='submit' value='Update Rivet' />
   </form>
 <br>
 <a href="/">TAKE ME HOME </a>

@@ -1,10 +1,25 @@
 <html>
   <head>
+    <link rel="stylesheet" href="/master.css">
   <head>
   <body>
-    <h1>Rivet Wiki</h1>
-    <%- body %>
-    <br>
-    <a href="/rivets/new">Add new entry</a>
+    <div id="sidebar">
+      <h3>Wiki Index</h3>
+      <ul>
+        <% for(let index = 0; index < rivets.length; index++){ %>
+          <% let rivet = rivets[index] %>
+          <li>
+            <a href="/rivets/<%= rivet.get('id') %>">
+              <%= rivet.get('name') %>
+            </a>
+          </li>
+        <% } %>
+      </ul>
+    </div>
+    <div id="main">
+      <%- body %>
+      <br>
+      <a href="/rivets/new">Add new entry</a>
+    </div>
   </body>
 </html>
