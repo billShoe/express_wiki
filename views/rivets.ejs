@@ -1,0 +1,21 @@
+<h2><%= Rivets.get('name') %></h2>
+<h3>Material</h3>
+<p><%= Rivets.get('material') %></p>
+<h3>Shape</h3>
+<p><%= Rivets.get('shape') %></p>
+<h3>Size</h3>
+<p><%= Rivets.get('size') %></p>
+<h3>Summary</h3>
+<p><%= Rivets.get('summary') %></p>
+<br>
+<br>
+
+<a href="/rivets/<%= Rivets.get('id')%>/edit">Edit </a>
+
+<form
+  action="/rivets/<%= Rivets.get('id') %>/delete"
+  method="post"
+>
+  <input type='submit' value='remove' />
+</form>
+<a href="/">TAKE ME HOME </a>

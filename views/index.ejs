@@ -1,0 +1,12 @@
+<h2>Index Page</h2>
+
+<ul>
+  <% for(let index = 0; index < Rivets.length; index++){ %>
+    <% let rivet = Rivets[index] %>
+    <li>
+      <a href="/rivets/<%= rivet.get('id') %>">
+        <%= rivet.get('name') %>
+      </a>
+    </li>
+  <% } %>
+</ul>
